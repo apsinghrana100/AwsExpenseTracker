@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+<nav>
+    <div class="navbar">
+      <div class="logo">
+        <h1>Website Name</h1>
+      </div>
+      <div class="user-info">
+        <p>Welcome, [Login Username]</p>
+      </div>
+      <div class="buttons">
+        <button class="logout-btn">Logout</button>
+        <button class="premium-btn">Premium</button>
+      </div>
+    </div>
+  </nav>
+
+  <form action="#" method="post" id="form1">
+    <div class="form-group">
+      <label for="number">Number:</label>
+      <input type="number" id="expens-money" name="money">
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <input type="text" id="expense-des" name="description">
+    </div>
+    <div class="form-group">
+      <label for="option">Select an option:</label>
+      <select id="option" name="option" id="drop-choice">
+        <option value="option1">Food</option>
+        <option value="option2">Vegitable</option>
+        <option value="option3">Keyboard</option>
+      </select>
+    </div>
+    <button type="submit" id="expense-add">Submit</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Number</th>
+        <th>Description</th>
+        <th>Option</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Records from the server will be added here dynamically -->
+    </tbody>
+  </table>
+  <!-- <script src="/fronted/premium.js"></script> -->
+  <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script> -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/fronted/addexpense.js"></script>
+</body>
+        
+</html>
